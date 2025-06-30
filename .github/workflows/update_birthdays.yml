@@ -1,0 +1,35 @@
+name: Update Birthdays HTML
+
+on:
+  schedule:
+    - cron: "0 22 * * *"  # magyar idő szerint 00:00 (nyáron)
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install gspread google-auth
+
+      - name: Run script
+        env:
+          GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
+        run: python update_birthdays.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "actions@github.com"
+          git add birthday_widget.html
+          git commit -m "Auto-update birthday widget" || echo "Nothing to commit"
+          git push
