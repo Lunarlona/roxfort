@@ -16,20 +16,20 @@ console.log("TV JS ELINDULT");
 				desc: "Steamboat Willie (Mickey Mouse) steering a ship"
 			},
 			{
-				file: "https://64.media.tumblr.com/ae9013e908dc1d63bd28359ff5ec22e6/tumblr_inline_nvl93yNCaY1qlgi1f_540.gifv",
+				file: "https://64.media.tumblr.com/ae9013e908dc1d63bd28359ff5ec22e6/tumblr_inline_nvl93yNCaY1qlgi1f_540.gif",
 				desc: "Főzőműsor"
 			},
 			{
-				file: "https://assets.codepen.io/416221/kingkong.gif",
-				desc: "King Kong waving on Empire State Building",
+				file: "https://i.pinimg.com/originals/67/e1/da/67e1daba60cba11fc267eb4f238b1edf.gif",
+				desc: "Kviddics",
 			},
 			{
-				file: "https://assets.codepen.io/416221/tracks.gif",
-				desc: "Looking at train tracks from behind a train",
+				file: "https://astoldbylaura.wordpress.com/wp-content/uploads/2017/10/giphy2.gif",
+				desc: "Deathly Hallows",
 			},
 			{
-				file: "https://assets.codepen.io/416221/nuke.gif",
-				desc: "Nuclear explosion at sea",
+				file: "https://64.media.tumblr.com/8b95c5385d6613c6ed01edca0b32c1d2/991d3a60a9d7309c-bc/s400x600/b82d239e82dfde775d6b00f73ec4793985d5b0a6.gif",
+				desc: "Vi",
 			}
 		],
 		gifs = [],
