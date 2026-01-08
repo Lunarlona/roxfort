@@ -2,67 +2,41 @@ const WORD = "WizBurger";
 const LOOP_TIME = 10000;
 
 const colors = [
-  '#FBDB4A',
-  '#F3934A',
-  '#EB547D',
-  '#9F6AA7',
-  '#5476B3',
-  '#2BB19B'
+  "#FBDB4A",
+  "#F3934A",
+  "#EB547D",
+  "#9F6AA7",
+  "#5476B3",
+  "#2BB19B"
 ];
 
-const text = document.getElementById("text");
-
-let letters = [];
-let fontSize = 80;
-
-function resize() {
-  fontSize = Math.min(window.innerWidth / (WORD.length + 2), 120);
-  text.style.fontSize = fontSize + "px";
-}
-
-function clearWord() {
-  letters.forEach(l => text.removeChild(l));
-  letters = [];
-}
+const stage = document.getElementById("stage");
 
 function buildWord() {
-  clearWord();
-  resize();
-
-  const spacing = fontSize * 0.65;
-  const totalWidth = spacing * (WORD.length - 1);
-  const startX = -totalWidth / 2;
+  stage.innerHTML = "";
 
   WORD.split("").forEach((char, i) => {
     const span = document.createElement("span");
+    span.className = "letter";
     span.textContent = char;
     span.style.color = colors[i % colors.length];
-    text.appendChild(span);
-    letters.push(span);
 
-    const targetX = startX + i * spacing;
+    /* animáció reset */
+    span.style.animation = "none";
 
-    TweenLite.fromTo(
-      span,
-      0.6,
-      {
-        x: 0,
-        y: -fontSize,
-        opacity: 0,
-        scale: 0
-      },
-      {
-        x: targetX,
-        y: 0,
-        opacity: 1,
-        scale: 1,
-        delay: i * 0.06,
-        ease: Back.easeOut
-      }
-    );
+    stage.appendChild(span);
+
+    /* force reflow – EZ A KULCS */
+    void span.offsetHeight;
+
+    /* animáció indítása */
+    span.style.animation = "popIn 0.6s ease-out forwards";
+    span.style.animationDelay = `${i * 0.08}s`;
   });
 }
 
-window.addEventListener("resize", buildWord);
+/* első indítás */
 buildWord();
+
+/* ismétlés */
 setInterval(buildWord, LOOP_TIME);
