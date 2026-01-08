@@ -28,6 +28,10 @@ console.log("TV JS ELINDULT");
 				desc: "Talk Show",
 			},
 			{
+				file: "https://i.pinimg.com/originals/19/57/ac/1957ac0ce349954c86b3c86d676abd37.gif",
+				desc: "Static",
+			},
+			{
 				file: "https://64.media.tumblr.com/8b95c5385d6613c6ed01edca0b32c1d2/991d3a60a9d7309c-bc/s400x600/b82d239e82dfde775d6b00f73ec4793985d5b0a6.gif",
 				desc: "Vi",
 			}
