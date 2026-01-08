@@ -20,6 +20,10 @@ console.log("TV JS ELINDULT");
 				desc: "Főzőműsor"
 			},
 			{
+				file: "https://i.pinimg.com/originals/e0/22/2a/e0222a1ddbcb5af2a6d71acf499fb1ca.gif",
+				desc: "Romantikus program"
+			},
+			{
 				file: "https://i.pinimg.com/originals/67/e1/da/67e1daba60cba11fc267eb4f238b1edf.gif",
 				desc: "Kviddics",
 			},
