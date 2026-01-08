@@ -12,8 +12,8 @@ console.log("TV JS ELINDULT");
 		staticTO,
 		gifData = [
 			{
-				file: "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnhpaTFibzRkaWJoM2puZWRybW1wZDk4Z3hidWpvbXpvb2NmaGZqdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xUA7aXOgbZTZvZZWlW/giphy.gif",
-				desc: "Talkshow"
+				file: "https://astoldbylaura.wordpress.com/wp-content/uploads/2017/10/giphy2.gif",
+				desc: "Deathly Hallows"
 			},
 			{
 				file: "https://64.media.tumblr.com/ae9013e908dc1d63bd28359ff5ec22e6/tumblr_inline_nvl93yNCaY1qlgi1f_540.gif",
@@ -24,8 +24,8 @@ console.log("TV JS ELINDULT");
 				desc: "Kviddics",
 			},
 			{
-				file: "https://astoldbylaura.wordpress.com/wp-content/uploads/2017/10/giphy2.gif",
-				desc: "Deathly Hallows",
+				file: "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnhpaTFibzRkaWJoM2puZWRybW1wZDk4Z3hidWpvbXpvb2NmaGZqdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xUA7aXOgbZTZvZZWlW/giphy.gif",
+				desc: "Talk Show",
 			},
 			{
 				file: "https://64.media.tumblr.com/8b95c5385d6613c6ed01edca0b32c1d2/991d3a60a9d7309c-bc/s400x600/b82d239e82dfde775d6b00f73ec4793985d5b0a6.gif",
