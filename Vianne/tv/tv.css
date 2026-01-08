@@ -4,16 +4,21 @@
 	margin: 0;
 	padding: 0;
 }
-body {
-	background: #cbb;
-	height: 100vh;
-}
+
 main {
 	font-size: 10px;
 	margin: auto;
 	width: 51em;
 	height: 52.5em;
 }
+
+.tv-root {
+	width: 500px;
+	font-size: 10px;
+	position: relative;
+	background: transparent;
+}
+
 img, canvas {
 	display: block;
 	top: 50%;
