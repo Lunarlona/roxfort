@@ -2,8 +2,9 @@ document.addEventListener("DOMContentLoaded",tv);
 function tv() {
 	var cnv = document.getElementById("static"),
 		c = cnv.getContext("2d"),
-		cw = cnv.offsetWidth,
-		ch = cnv.offsetHeight,
+		cw = cnv.width,
+		ch = cnv.height,
+
 		staticScrn = c.createImageData(cw,ch),
 		staticFPS = 30,
 		isStatic = false,
