@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded",tv);
 function tv() {
+console.log("TV JS ELINDULT");
 	var cnv = document.getElementById("static"),
 		c = cnv.getContext("2d"),
 		cw = cnv.width,
@@ -34,11 +35,11 @@ function tv() {
 		gifs = [],
 		channel = 0;
 
-	for (g in gifData) {
-		gifs.push(new Image());
-		gifs[g].src = gifData[g].file;
-		gifs[g].alt = gifData[g].desc;
-	}
+	for (let g = 0; g < gifData.length; g++) {
+    gifs.push(new Image());
+    gifs[g].src = gifData[g].file;
+    gifs[g].alt = gifData[g].desc;
+}
 
 	/* Static */
 	var runStatic = function() {
