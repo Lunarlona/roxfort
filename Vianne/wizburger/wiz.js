@@ -10,10 +10,10 @@ const colors = [
   "#2BB19B"
 ];
 
-const stage = document.getElementById("stage");
+const logo = document.getElementById("logo");
 
 function buildWord() {
-  stage.innerHTML = "";
+  logo.innerHTML = "";
 
   WORD.split("").forEach((char, i) => {
     const span = document.createElement("span");
@@ -21,22 +21,15 @@ function buildWord() {
     span.textContent = char;
     span.style.color = colors[i % colors.length];
 
-    /* animáció reset */
     span.style.animation = "none";
+    logo.appendChild(span);
 
-    stage.appendChild(span);
-
-    /* force reflow – EZ A KULCS */
     void span.offsetHeight;
 
-    /* animáció indítása */
     span.style.animation = "popIn 0.6s ease-out forwards";
     span.style.animationDelay = `${i * 0.08}s`;
   });
 }
 
-/* első indítás */
 buildWord();
-
-/* ismétlés */
 setInterval(buildWord, LOOP_TIME);

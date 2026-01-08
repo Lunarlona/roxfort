@@ -5,17 +5,23 @@ html, body {
   height: 100%;
   background: transparent;
   overflow: hidden;
-  font-family: 'Rubik Mono One', sans-serif;
 }
 
-/* Középre igazított színpad */
+/* Központi blokk */
 .stage {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
   white-space: nowrap;
+}
+
+/* Fő logó */
+.logo {
+  font-family: 'Rubik Mono One', sans-serif;
   font-size: 80px;
+  margin-bottom: 12px;
 }
 
 /* Betűk */
@@ -23,6 +29,15 @@ html, body {
   display: inline-block;
   margin-right: 0.15em;
   opacity: 0;
+}
+
+/* Alcím / tagline */
+.tagline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 /* Animáció */
