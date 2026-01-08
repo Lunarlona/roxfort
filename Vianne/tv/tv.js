@@ -12,8 +12,8 @@ console.log("TV JS ELINDULT");
 		staticTO,
 		gifData = [
 			{
-				file: "https://assets.codepen.io/416221/willie.gif",
-				desc: "Steamboat Willie (Mickey Mouse) steering a ship"
+				file: "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnhpaTFibzRkaWJoM2puZWRybW1wZDk4Z3hidWpvbXpvb2NmaGZqdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xUA7aXOgbZTZvZZWlW/giphy.gif",
+				desc: "Talkshow"
 			},
 			{
 				file: "https://64.media.tumblr.com/ae9013e908dc1d63bd28359ff5ec22e6/tumblr_inline_nvl93yNCaY1qlgi1f_540.gif",
