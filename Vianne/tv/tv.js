@@ -16,8 +16,8 @@ console.log("TV JS ELINDULT");
 				desc: "Steamboat Willie (Mickey Mouse) steering a ship"
 			},
 			{
-				file: "https://assets.codepen.io/416221/skeletons.gif",
-				desc: "Spooky scary skeletons sending shivers down your spine"
+				file: "https://64.media.tumblr.com/ae9013e908dc1d63bd28359ff5ec22e6/tumblr_inline_nvl93yNCaY1qlgi1f_540.gifv",
+				desc: "Főzőműsor"
 			},
 			{
 				file: "https://assets.codepen.io/416221/kingkong.gif",
