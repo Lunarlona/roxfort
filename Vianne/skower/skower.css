@@ -73,12 +73,18 @@
   background: linear-gradient(
     120deg,
     transparent 0%,
-    rgba(255,255,255,0.9) 50%,
+    rgba(140, 210, 255, 0.85) 50%,
     transparent 100%
   );
   transform: skewX(-15deg);
   pointer-events: none;
 }
+
+.skowerAd-wipe {
+  filter: drop-shadow(0 0 6px rgba(140, 210, 255, 0.45));
+}
+
+
 
 /* wipe animáció */
 @keyframes skowerWipe {
