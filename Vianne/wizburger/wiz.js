@@ -1,7 +1,7 @@
-const WORD = "WizBurger";
-const LOOP_TIME = 10000;
+const WIZBURGER_WORD = "WizBurger";
+const WIZBURGER_LOOP_TIME = 10000;
 
-const colors = [
+const WIZBURGER_COLORS = [
   "#FBDB4A",
   "#F3934A",
   "#EB547D",
@@ -10,27 +10,27 @@ const colors = [
   "#2BB19B"
 ];
 
-const logo = document.getElementById("logo");
+const wizburgerLogo = document.getElementById("wizburger-logo");
 
-function buildWord() {
-  logo.innerHTML = "";
+function wizburgerBuild() {
+  wizburgerLogo.innerHTML = "";
 
-  WORD.split("").forEach((char, i) => {
+  WIZBURGER_WORD.split("").forEach((char, i) => {
     const span = document.createElement("span");
     span.className = "letter";
     span.textContent = char;
-    span.style.color = colors[i % colors.length];
+    span.style.color = WIZBURGER_COLORS[i % WIZBURGER_COLORS.length];
 
     span.style.animation = "none";
-    logo.appendChild(span);
+    wizburgerLogo.appendChild(span);
 
     /* force reflow */
     void span.offsetHeight;
 
-    span.style.animation = "popIn 0.6s ease-out forwards";
+    span.style.animation = "wizburger-popIn 0.6s ease-out forwards";
     span.style.animationDelay = `${i * 0.08}s`;
   });
 }
 
-buildWord();
-setInterval(buildWord, LOOP_TIME);
+wizburgerBuild();
+setInterval(wizburgerBuild, WIZBURGER_LOOP_TIME);
