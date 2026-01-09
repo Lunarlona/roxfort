@@ -4,7 +4,7 @@
   max-width: 500px;
   width: 100%;
   margin: 0 auto;
-  padding: 12px;
+  padding: 14px 12px;
   box-sizing: border-box;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
@@ -12,14 +12,14 @@
 .skowerAd-row {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
+  gap: 14px;
 }
 
-/* ikon */
+/* nagyobb ikon */
 .skowerAd-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -35,49 +35,54 @@
   min-width: 0;
 }
 
-/* cím */
+/* cím – két sor megengedett */
 .skowerAd-title {
   position: relative;
   font-family: 'Rubik Mono One', sans-serif;
   font-size: 26px;
-  line-height: 1.1;
+  line-height: 1.15;
   overflow: hidden;
 }
 
-/* alap szöveg (koszos állapot) */
+/* KOSZOS ALAPÁLLAPOT */
 .skowerAd-text {
   display: inline-block;
-  color: rgba(255,255,255,0.35);
-  filter: blur(0.6px);
-  transition: color 0.6s ease, filter 0.6s ease;
+  color: rgb(150, 160, 140);            /* szürkés-zöld */
+  filter: blur(0.8px) saturate(0.7);
+  transition:
+    color 3.5s ease,
+    filter 3.5s ease;
 }
 
-/* tiszta állapot */
+/* TISZTA ÁLLAPOT */
 .skowerAd-root.is-clean .skowerAd-text {
-  color: rgba(255,255,255,0.95);
+  color: rgba(255,255,255,0.96);
   filter: none;
+  transition:
+    color 0.5s ease,
+    filter 0.5s ease;
 }
 
 /* wipe csík */
 .skowerAd-wipe {
   position: absolute;
-  top: -10%;
-  left: -30%;
-  width: 30%;
-  height: 120%;
+  top: -15%;
+  left: -35%;
+  width: 35%;
+  height: 130%;
   background: linear-gradient(
     120deg,
     transparent 0%,
-    rgba(255,255,255,0.85) 50%,
+    rgba(255,255,255,0.9) 50%,
     transparent 100%
   );
-  pointer-events: none;
   transform: skewX(-15deg);
+  pointer-events: none;
 }
 
 /* wipe animáció */
 @keyframes skowerWipe {
-  from { left: -35%; }
+  from { left: -40%; }
   to   { left: 120%; }
 }
 
