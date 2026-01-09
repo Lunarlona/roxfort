@@ -24,6 +24,7 @@ function buildWord() {
     span.style.animation = "none";
     logo.appendChild(span);
 
+    /* force reflow */
     void span.offsetHeight;
 
     span.style.animation = "popIn 0.6s ease-out forwards";
