@@ -1,0 +1,92 @@
+/* ===== Skower reklám – namespace ===== */
+
+.skowerAd-root {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 12px;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.skowerAd-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+/* ikon */
+.skowerAd-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.08);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+  flex: 0 0 auto;
+}
+
+/* szöveg blokk */
+.skowerAd-block {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* cím */
+.skowerAd-title {
+  position: relative;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 26px;
+  line-height: 1.1;
+  overflow: hidden;
+}
+
+/* alap szöveg (koszos állapot) */
+.skowerAd-text {
+  display: inline-block;
+  color: rgba(255,255,255,0.35);
+  filter: blur(0.6px);
+  transition: color 0.6s ease, filter 0.6s ease;
+}
+
+/* tiszta állapot */
+.skowerAd-root.is-clean .skowerAd-text {
+  color: rgba(255,255,255,0.95);
+  filter: none;
+}
+
+/* wipe csík */
+.skowerAd-wipe {
+  position: absolute;
+  top: -10%;
+  left: -30%;
+  width: 30%;
+  height: 120%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255,255,255,0.85) 50%,
+    transparent 100%
+  );
+  pointer-events: none;
+  transform: skewX(-15deg);
+}
+
+/* wipe animáció */
+@keyframes skowerWipe {
+  from { left: -35%; }
+  to   { left: 120%; }
+}
+
+/* alcím */
+.skowerAd-tagline {
+  margin-top: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.78);
+}
